@@ -1,0 +1,15 @@
+RewriteEngine on
+
+#RewriteCond %{HTTP_USER_AGENT} (msnbot|NaverBot|nabot|NABOT|NaverRobot) [NC]
+#RewriteRule ^/.*$ - [F]
+
+#RewriteRule ^index\.html$ /index.php [L]
+#RewriteRule ^sitemap\.xml$ /google-sitemap.php [L]
+#RewriteRule ^(.*).html$ /page.php?p=$1 [L]
+
+# serve custom error pages
+ErrorDocument 400 /error.php?error-page=400
+ErrorDocument 401 /error.php?error-page=401
+ErrorDocument 403 /error.php?error-page=403
+ErrorDocument 404 /error.php?error-page=404
+ErrorDocument 500 /error.php?error-page=500

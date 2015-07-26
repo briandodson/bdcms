@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /archive/
+Disallow: /cgi-bin/
+Disallow: /cgi-local/
+Disallow: /cms/
+Disallow: /etc/
+Disallow: /stats/
+Disallow: /tmp/

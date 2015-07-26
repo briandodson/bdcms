@@ -1,0 +1,222 @@
+/*
+Title: PFC Payment Solutions layout stylesheet (main.css)
+File Author: Brian Dodson, bri-design studios (bri-design.com)
+Project Developer: DaGama Web Studio, Inc. (dagamawebstudio.com)
+Version: 1.0
+Last Modified: 04/30/09
+*/
+
+/* Eric Meyer CSS Reset (http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/) with modifications */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1; position: relative;}
+blockquote, q {quotes: none;}
+/* gets rid of the disabled vertical scrollbar that IE puts on textareas (http://blog.klustered.com/2007/03/14/tip/) */
+textarea {overflow: auto;}
+/* from Viget Labs (http://www.viget.com/inspire/styling-the-button-element-in-internet-explorer/) */
+button {width: auto; overflow: visible; background: transparent; border: none; cursor: pointer; }
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* ================================================= Common Notes */
+/*
+Hex colors:
+Grey text:			666666
+*/
+
+/* ================================================= GLOBAL tags */
+body {
+	text-align:center;
+	font-size:62.5%; /* All font sizes reset to 10px */
+	font-family:Arial, Verdana, sans-serif;
+	line-height:10px; /* Reset line height to common 10px */
+	background:#333;
+	margin:0 10px 20px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-size:1.6em;
+font-family:Georgia, Times, serif;
+color:#666;
+line-height:1.6em;
+}
+p, ul, li, table, td, dl, dt, dd, form, fieldset {
+color:#666;
+font-size:1.2em;
+line-height:1.4em;
+}
+a, a:link, a:visited {color:#459C3D; text-decoration:none; outline:0px !important;}
+a:hover, a:active, a:focus {text-decoration:underline; outline:0px !important;}
+
+input, textarea {
+font-size:0.85em;
+padding:4px;
+border:1px solid #666;
+width:350px;
+color:#666;
+}
+
+/* ================================================= GLOBAL utility classes and special definitions */
+.left {float:left;}
+.left img {margin-right:10px;}
+.textleft {text-align:left;}
+.right {float:right}
+.right img {margin-left:10px;}
+.textright {text-align:right;}
+.center {text-align:center !important; margin:0 auto; float:none;}
+.textcenter {text-align:center;}
+.textjustify {text-align:justify;}
+.clear {clear:both;}
+.clearRight {clear:right;}
+.clearLeft {clear:left;}
+.nomargin {margin:0 !important;}
+.nopadding {padding:0 !important;}
+
+
+/* ================================================= GLOBAL layout, ID's and common classes */
+
+#container {
+width:990px;
+text-align:left;
+margin:0 auto;
+background:#FFF;
+}
+#wrapper {
+}
+#header {
+height:140px;
+background:#fefefe;
+}
+#topNav {
+float:right;
+margin:10px 15px 0 0;
+color:#666;
+font-size:1.1em;
+}
+#topNav a {
+color:#666;
+}
+#logo {
+float:left;
+height:95px;
+}
+#logo a {
+display:block;
+width:190px;
+height:75px;
+margin:15px 0 0 20px;
+outline:none;
+}
+#navigation {
+clear:both;
+height:45px;
+background:#000;
+}
+#banner {
+clear:both;
+}
+.subBanner {
+height:70px;
+background:#333;
+}
+#content {
+background:#000;
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+}
+.copy {font-size:1.2em;}
+.copy h1 {
+font-size:2em;
+margin-bottom:20px;
+}
+.copy ul {
+font-size:1em;
+margin-bottom:16px;
+}
+.copy ul, .copy li {
+font-size:1em;
+}
+.copy p {
+margin-bottom:16px;
+}
+.copy legend {
+font-size:1em;
+margin-bottom:15px;
+}
+.copy label {
+display:block;
+font-size:0.85em;
+}
+.copy label.error {
+border:1px solid red;
+width:290px;
+padding:0 3px;
+font-size:0.75em;
+color:red;
+background:#f2f2f2;
+margin:-16px 0 15px 5px;
+position:relative;
+z-index:1;
+text-align:center;
+}
+.copy input, .copy textarea {
+width:300px;
+margin-bottom:15px;
+}
+.copy input.submit {
+width:auto;
+}
+.copy dl {
+font-size:1em;
+width:590px;
+}
+.contactInfo {
+width:282px;
+text-align:left;
+padding-bottom:15px;
+padding-left:18px;
+}
+.contactInfo h3 {
+font-size:1.5em;
+color:#670D0D;
+border-bottom:1px solid #670D0D;
+margin-bottom:15px;
+}
+.contactInfo p {
+font-size:1.3em;
+color:#670D0D;
+font-weight:bold;
+}
+div.success {
+font-size:1.4em;
+font-style:italic;
+color:green;
+font-weight:bold;
+margin:15px 0 15px 0;
+}
+div.error {
+font-size:1.4em;
+font-style:italic;
+color:red;
+font-weight:bold;
+margin:15px 0 15px 0;
+}
+#footer {
+color:#bbb;
+font-size:1em;
+}
+#footer a {
+color:#bbb;
+}
+#footer .copy {
+float:left;
+padding:15px 0 0 0px;
+font-size:1em;
+}
+#footer .info {
+float:right;
+padding:15px 0px 0 0;
+font-size:1em;
+}
